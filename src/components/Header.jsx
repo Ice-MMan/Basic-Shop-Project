@@ -1,7 +1,14 @@
 import React from "react";
 
-const Header = ({ money }) => {
-  return <div>Harcamak için $ {money} paramız var.</div>;
+const Header = ({ money, total }) => {
+  return (
+    <div>
+      {" "}
+      {total > 0
+        ? `Kalan para $ ${money - total} vardır`
+        : `Harcamak için $ ${money} paranız var.`}
+    </div>
+  );
 };
 
 export default Header;

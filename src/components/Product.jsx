@@ -42,7 +42,9 @@ const Product = ({ product, basket, setBasket }) => {
       <h6>{title}</h6>
       <div className="price">$ {price}</div>
       <div className="action">
-        <button onClick={removeBasket}>Çıkart</button>
+        <button disabled={!basketItem} onClick={removeBasket}>
+          Çıkart
+        </button>
         <span className="amount">{(basketItem && basketItem.amount) || 0}</span>
         <button onClick={addBasket}>Satın al</button>
       </div>
