@@ -65,6 +65,11 @@ const Product = ({ product, basket, setBasket, money, total }) => {
             
           
         }
+       .product .price{
+        color:green;
+        font-size
+
+       }
 
         .product img{
           width:100%;
