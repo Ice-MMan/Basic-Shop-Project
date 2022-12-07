@@ -67,7 +67,8 @@ const Product = ({ product, basket, setBasket, money, total }) => {
         }
        .product .price{
         color:green;
-        font-size
+        font-size:25px;
+        margin-bottom:10px;
 
        }
 
