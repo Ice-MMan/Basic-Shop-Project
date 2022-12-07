@@ -1,7 +1,7 @@
 import React from "react";
 
 const Product = ({ product, basket, setBasket, money, total }) => {
-  const { id, title, price } = product;
+  const { id, title, price, image } = product;
 
   const basketItem = basket.find((item) => item.id === product.id);
 
@@ -39,6 +39,7 @@ const Product = ({ product, basket, setBasket, money, total }) => {
 
   return (
     <div className="product">
+      <img src={image} alt="" />
       <h6>{title}</h6>
       <div className="price">$ {price}</div>
       <div className="action">
@@ -53,12 +54,52 @@ const Product = ({ product, basket, setBasket, money, total }) => {
       <style isx>
         {`
         .product{
-            padding:10px;
-            background:#8f88889f;
-            border:2px solid #f01010;
+          
+            padding:15px;
+            background:#cac2c29f;
+          
             margin-bottom:20px;
             font-size:15px;
-        }`}
+            width:250px
+           
+            
+          
+        }
+
+        .product img{
+          width:100%;
+          height:60%;
+       
+        }
+
+        .product h6 {
+          font-size:20px;
+          margin-bottom:10px;
+        }
+
+        .action {
+
+          display: flex;
+          align-items:center
+        }
+
+        .action button {
+
+          height:30px;
+          padding: 0 15px;
+          flex:1;
+          cursor:pointer;
+        }
+        .amount{
+          width:50px;
+          text-align:center;
+        
+          
+        }
+        
+        
+        
+        `}
       </style>
     </div>
   );

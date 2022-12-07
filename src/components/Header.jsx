@@ -12,6 +12,8 @@ const Header = ({ money, total }) => {
       <style isx>
         {`
         .header{
+          position:sticky;
+          top:0;
           background:linear-gradient(to bottom , #0a5e0a,#1d501d);
           height:50px;
           display:flex;

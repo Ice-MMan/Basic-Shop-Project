@@ -2,26 +2,31 @@
   {
     "id": 1,
     "title": "Kola",
-    "price": 5
+    "price": 5,
+    "image": "https://ayb.akinoncdn.com/products/2019/01/18/3544/5aa1ee14-1c83-4213-a62b-773c4785e187_size780x780_quality60_cropCenter.jpg"
   },
   {
     "id": 2,
     "title": "Kitap",
-    "price": 10
+    "price": 10,
+    "image": "https://listelist.com/wp-content/uploads/2022/05/yeni-cikan-kitaplar-1-scaled.jpg"
   },
   {
     "id": 3,
     "title": "Kalem",
-    "price": 20
+    "price": 20,
+    "image": "https://www.markakalem.com/productimages/117083/big/8690187385520-6.jpg"
   },
   {
     "id": 4,
     "title": "Ayakkabı",
-    "price": 20
+    "price": 20,
+    "image": "https://floimages.mncdn.com/media/catalog/product/21-11/15/yazkis-kadin-siyah-uzun-keten-spor-ayakkabi-7331-1636983824.JPG"
   },
   {
     "id": 5,
     "title": "Araba",
-    "price": 50
+    "price": 50,
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqv798T_NBdesNAGJB9AI4lWPcQXBT7aSAeg&usqp=CAU"
   }
 ]
