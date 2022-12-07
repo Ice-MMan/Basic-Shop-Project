@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import "./App.css";
+import Basket from "./components/Basket";
 import Header from "./components/Header";
 import Product from "./components/Product";
 import products from "./products.json";
@@ -22,6 +23,10 @@ function App() {
     console.log(total);
   }, [basket]);
 
+  const resetButon = () => {
+    setBasket([]);
+  };
+
   return (
     <>
       <Header total={total} money={money} />
@@ -32,8 +37,15 @@ function App() {
           product={product}
           basket={basket}
           setBasket={setBasket}
+          total={total}
+          money={money}
         />
       ))}
+      <div>
+        <Basket total={total} basket={basket} products={products} />
+      </div>
+
+      <button onClick={resetButon}>Sıfırla </button>
     </>
   );
 }
